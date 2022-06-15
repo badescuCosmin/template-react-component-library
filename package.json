@@ -1,5 +1,8 @@
 {
-  "name": "test-package",
+  "name": "@badescuCosmin/template-react-component-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/badescuCosmin"
+  },
   "version": "1.0.0",
   "description": "testpackage",
   "scripts": {
