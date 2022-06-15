@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/badescuCosmin"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "testpackage",
   "scripts": {
     "rollup": "rollup -c"
