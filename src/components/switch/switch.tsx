@@ -4,7 +4,6 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { SwitchProps } from "@mui/material/Switch";
 import { Switch as MuiSwitch } from "@mui/material";
 import { MuiSwitchProps } from "./switch.types";
-import { AddContactActiveIcon } from "../icons";
 
 const IOSSwitch = styled((props: SwitchProps) => (
   <MuiSwitch
@@ -64,18 +63,15 @@ const IOSSwitch = styled((props: SwitchProps) => (
 }));
 
 export const Switch = ({ isChecked, label, onChange, sx }: MuiSwitchProps) => (
-  <>
-    <AddContactActiveIcon />
-    <FormControlLabel
-      control={
-        <IOSSwitch
-          sx={{ m: 1 }}
-          checked={isChecked}
-          onChange={(e) => onChange(e)}
-        />
-      }
-      label={label}
-      sx={{ display: "inline", ...sx }}
-    />
-  </>
+  <FormControlLabel
+    control={
+      <IOSSwitch
+        sx={{ m: 1 }}
+        checked={isChecked}
+        onChange={(e) => onChange(e)}
+      />
+    }
+    label={label}
+    sx={{ display: "inline", ...sx }}
+  />
 );

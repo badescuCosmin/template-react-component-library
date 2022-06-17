@@ -6,3 +6,4 @@ export { MuiFormLabelTheme } from "./form-label.theme";
 export { MuiSelectTheme } from "./select.theme";
 export { MuiSvgIconTheme } from "./svg-icon.theme";
 export { MuiTextFieldTheme } from "./text-field.theme";
+export { MuiIconButtonTheme } from "./icon-button.theme";

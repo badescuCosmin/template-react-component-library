@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/badescuCosmin"
   },
-  "version": "3.0.4",
+  "version": "3.0.8",
   "description": "mui-lib",
   "scripts": {
     "rollup": "rollup -c",

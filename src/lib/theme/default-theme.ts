@@ -12,6 +12,7 @@ import {
   MuiBaselineTheme,
   MuiSvgIconTheme,
   MuiButtonTheme,
+  MuiIconButtonTheme,
 } from "../custom-components-theme";
 
 export const defaultTheme = createTheme({
@@ -32,6 +33,7 @@ export const defaultTheme = createTheme({
     MuiFormLabel: MuiFormLabelTheme,
     MuiSelect: MuiSelectTheme,
     MuiAutocomplete: MuiAutocompleteTheme,
+    MuiIconButton: MuiIconButtonTheme,
   },
   constants,
 });
