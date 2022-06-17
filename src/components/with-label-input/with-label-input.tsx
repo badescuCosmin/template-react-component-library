@@ -15,16 +15,16 @@ import {
   getDateToDisplay,
   phoneMask,
   notValidYear,
-} from "../../utils/appParams";
+  getErrorMessage,
+} from "../../utils";
 import {
   WithLabelInputProps,
   WithLabelDateInputProps,
-} from "./withLabelInput.types";
-import { validationRules } from "../../utils/validationRules";
-import { getErrorMessage } from "../../utils/errorMessages";
-import { useAfterInitialRender } from "../../hooks/useAfterInitialRender";
-import { constants } from "../theme/constants";
-import { checkTimeInput, convertMaskInput } from "../../utils/utils";
+} from "./with-label-input.types";
+import { validationRules } from "../../utils/validation-rules";
+import { useAfterInitialRender } from "../../hooks/use-after-initial-render";
+import { constants } from "../../lib/theme/constants";
+import { checkTimeInput, convertMaskInput } from "../../utils/methods";
 
 const WithLabelInputStyle = styled(MuiTextField)(({ theme, ...props }) => {
   const errorColor = theme.colors.red70;

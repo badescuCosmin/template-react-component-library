@@ -1,7 +1,7 @@
 import { Components } from "@mui/material/styles";
 import { colors } from "../theme";
 
-export const MuiCssBaselineTheme: Components["MuiCssBaseline"] = {
+export const MuiBaselineTheme: Components["MuiCssBaseline"] = {
   styleOverrides: {
     body: {
       overflow: "hidden",

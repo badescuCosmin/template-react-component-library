@@ -13,7 +13,3 @@ export const validationRules = {
   onlyNumbers: /^[0-9]+$/,
   notWhiteSpace: /^\S*$/,
 };
-
-export const regexSeparators = {
-  addressPostalCode: /([ \t,;.][\d]{2,6})$/,
-};

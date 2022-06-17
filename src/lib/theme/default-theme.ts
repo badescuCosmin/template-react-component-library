@@ -2,17 +2,17 @@ import { createTheme } from "@mui/material/styles";
 import { colors } from "./tokens/colors";
 import { typography } from "./tokens/typography";
 import { elevations } from "./tokens/elevations";
-import { MuiButtonTheme } from "../button";
-import { MuiIconTheme } from "../icon";
 import { constants } from "./constants";
-import { MuiCssBaselineTheme } from "../global-styles";
 import {
-  MuiDatePickerTheme,
-  MuiFilledInputTheme,
-  MuiFormLabelTheme,
-  MuiSelectTheme,
   MuiAutocompleteTheme,
-} from "../withLabelInput";
+  MuiSelectTheme,
+  MuiFormLabelTheme,
+  MuiButtonBaseTheme,
+  MuiTextFieldTheme,
+  MuiBaselineTheme,
+  MuiSvgIconTheme,
+  MuiButtonTheme,
+} from "../custom-components-theme";
 
 export const defaultTheme = createTheme({
   palette: {
@@ -25,10 +25,10 @@ export const defaultTheme = createTheme({
   elevations,
   components: {
     MuiButton: MuiButtonTheme,
-    MuiSvgIcon: MuiIconTheme,
-    MuiCssBaseline: MuiCssBaselineTheme,
-    MuiTextField: MuiFilledInputTheme,
-    MuiButtonBase: MuiDatePickerTheme,
+    MuiSvgIcon: MuiSvgIconTheme,
+    MuiCssBaseline: MuiBaselineTheme,
+    MuiTextField: MuiTextFieldTheme,
+    MuiButtonBase: MuiButtonBaseTheme,
     MuiFormLabel: MuiFormLabelTheme,
     MuiSelect: MuiSelectTheme,
     MuiAutocomplete: MuiAutocompleteTheme,

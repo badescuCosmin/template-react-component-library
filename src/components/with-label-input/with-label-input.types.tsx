@@ -1,5 +1,8 @@
-import { TextFieldProps } from '@mui/material';
-export type TextFieldBase = Omit<TextFieldProps, 'FilledTextFieldProps' | 'variant'>;
+import { TextFieldProps } from "@mui/material";
+export type TextFieldBase = Omit<
+  TextFieldProps,
+  "FilledTextFieldProps" | "variant"
+>;
 
 export interface WithLabelInputProps extends TextFieldBase {
   type?: string;

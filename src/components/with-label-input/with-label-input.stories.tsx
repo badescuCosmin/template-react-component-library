@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Box } from "@mui/material";
-import { WithLabelInput, WithLabelDateInput } from "./withLabelInput";
+import { WithLabelInput, WithLabelDateInput } from "./with-label-input";
 
 export default {
   title: "WithLabelInput",

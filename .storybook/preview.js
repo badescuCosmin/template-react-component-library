@@ -1,8 +1,8 @@
 //@ts-check
 import React from "react";
 import { ThemeProvider as StoryTheme } from "@storybook/theming";
-import { defaultTheme } from "../src/components/theme/default-theme";
-import { ThemeProvider } from "../src/components/theme";
+import { defaultTheme } from "../src/lib/theme/default-theme";
+import { ThemeProvider } from "../src/lib/theme";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
