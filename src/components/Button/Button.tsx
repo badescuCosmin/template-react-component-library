@@ -2,7 +2,7 @@ import React from "react";
 import { Button as MuiButton } from "@mui/material";
 import { ButtonPropsBase, ButtonVariant } from "./button.types";
 
-interface ButtonProps extends ButtonPropsBase {
+export interface ButtonProps extends ButtonPropsBase {
   variant?: ButtonVariant;
 }
 

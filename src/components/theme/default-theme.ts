@@ -6,6 +6,13 @@ import { MuiButtonTheme } from "../button";
 import { MuiIconTheme } from "../icon";
 import { constants } from "./constants";
 import { MuiCssBaselineTheme } from "../global-styles";
+import {
+  MuiDatePickerTheme,
+  MuiFilledInputTheme,
+  MuiFormLabelTheme,
+  MuiSelectTheme,
+  MuiAutocompleteTheme,
+} from "../withLabelInput";
 
 export const defaultTheme = createTheme({
   palette: {
@@ -20,6 +27,11 @@ export const defaultTheme = createTheme({
     MuiButton: MuiButtonTheme,
     MuiSvgIcon: MuiIconTheme,
     MuiCssBaseline: MuiCssBaselineTheme,
+    MuiTextField: MuiFilledInputTheme,
+    MuiButtonBase: MuiDatePickerTheme,
+    MuiFormLabel: MuiFormLabelTheme,
+    MuiSelect: MuiSelectTheme,
+    MuiAutocomplete: MuiAutocompleteTheme,
   },
   constants,
 });
