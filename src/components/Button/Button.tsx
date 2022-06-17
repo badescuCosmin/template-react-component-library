@@ -1,11 +1,15 @@
 import React from "react";
+import { Button as MuiButton } from "@mui/material";
+import { ButtonPropsBase, ButtonVariant } from "./button.types";
 
-export interface ButtonProps {
-  label: string;
+interface ButtonProps extends ButtonPropsBase {
+  variant?: ButtonVariant;
 }
 
-const Button = (props: ButtonProps) => {
-  return <button style={{ color: "red" }}>{props.label} Cosmin badescu</button>;
-};
-
-export default Button;
+export const Button = React.memo(
+  ({ variant = "primary", children, ...restProps }: ButtonProps) => (
+    <MuiButton {...restProps} size="medium" variant={variant}>
+      {children}
+    </MuiButton>
+  )
+);

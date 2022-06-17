@@ -2,12 +2,26 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
+import image from "@rollup/plugin-image";
+import svgr from "@svgr/rollup";
 
 const packageJson = require("./package.json");
 
 export default [
   {
     input: "src/index.ts",
+    external: [
+      "react",
+      "react-dom",
+      "prop-types",
+      "@emotion/react",
+      "@emotion/styled",
+      "@mui/lab",
+      "@mui/icons-material",
+      "@mui/material",
+      "@mui/material/styles",
+      "@mui/styles",
+    ],
     output: [
       {
         file: packageJson.main,
@@ -24,6 +38,8 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
+      image(),
+      svgr(),
     ],
   },
   {
